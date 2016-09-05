@@ -1,0 +1,22 @@
+{
+  "name": "dinosaur-fetcher",
+  "version": "0.0.1",
+  "description": "Fetches dinosaurs",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldeste/dinosaur-fetcher.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Alexander D'Este <alexanderdeste@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aldeste/dinosaur-fetcher/issues"
+  },
+  "homepage": "https://github.com/aldeste/dinosaur-fetcher#readme"
+}
