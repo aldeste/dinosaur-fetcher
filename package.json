@@ -4,7 +4,7 @@
   "name": "dinosaur-fetcher",
   "description": "Fetches the absolute best dinosaurs and others",
   "main": "src/index.js",
-  "version": "0.0.0semantically-released",
+  "version": "0.0.0-semantically-released",
   "scripts": {
     "test": "mocha tests/index.test.js -w",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
