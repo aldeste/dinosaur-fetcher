@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "version": "0.0.0-semantically-released",
   "scripts": {
-    "test": "mocha tests/index.test.js",
+    "test": "./node_modules/.bin/mocha tests/index.test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "config": {
