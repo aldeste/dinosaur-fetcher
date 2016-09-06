@@ -1,22 +1,33 @@
 {
+  "author": "Alexander D'Este <alexanderdeste@gmail.com>",
+  "license": "MIT",
   "name": "dinosaur-fetcher",
-  "version": "0.1.2-beta.0",
-  "description": "Fetches dinosaurs",
+  "description": "Fetches the absolute best dinosaurs and others",
   "main": "src/index.js",
+  "version": "0.0.0semantically-released",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/index.test.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aldeste/dinosaur-fetcher.git"
+    "url": "https://github.com/aldeste/dinosaur-fetcher.git"
   },
   "keywords": [
     "javascript"
   ],
-  "author": "Alexander D'Este <alexanderdeste@gmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/aldeste/dinosaur-fetcher/issues"
   },
-  "homepage": "https://github.com/aldeste/dinosaur-fetcher#readme"
+  "homepage": "https://github.com/aldeste/dinosaur-fetcher#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "commitizen": "^2.8.6",
+    "cz-conventional-changelog": "^1.2.0",
+    "mocha": "^3.0.2",
+    "semantic-release": "^4.3.5"
+  }
 }
