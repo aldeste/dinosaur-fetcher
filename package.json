@@ -1,10 +1,10 @@
 {
-  "author": "Alexander D'Este <alexanderdeste@gmail.com>",
-  "license": "MIT",
   "name": "dinosaur-fetcher",
   "description": "Fetches the absolute best dinosaurs and others",
   "main": "src/index.js",
   "version": "0.0.0-semantically-released",
+  "author": "Alexander D'Este <alexanderdeste@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/index.test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
