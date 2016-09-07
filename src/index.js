@@ -1,5 +1,11 @@
 const dinosaurs = require('./dinosaurs.json');
 
+/**
+ * Generates a random number
+ * @param  {number} min Minimum value
+ * @param  {number} max Maximum value
+ * @return {number}     A random number between min and max
+ */
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);

@@ -13,14 +13,14 @@ describe('all', () => {
 
 describe('random', () => {
   it('should return a random dinosaur', () => {
-    const randomItem = dinosaurs.random();
-    expect(dinosaurs.all).to.include(randomItem);
+    const dino = dinosaurs.random();
+    expect(dinosaurs.all).to.include(dino);
   })
 
   it('should return a an array of random items, if passed a number', () => {
-    const randomItems = dinosaurs.random(3);
-    expect(randomItems).to.have.length(3);
-    randomItems.map(dino => {
+    const dinos = dinosaurs.random(3);
+    expect(dinos).to.have.length(3);
+    dinos.map(dino => {
         expect(dinosaurs.all).to.include(dino);
     });
   });
