@@ -1,4 +1,3 @@
-const uniqueRandomArray = require('unique-random-array');
 const dinosaurs = require('./dinosaurs.json');
 
 function getRandomInt(min, max) {
