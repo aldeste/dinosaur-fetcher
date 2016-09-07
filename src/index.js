@@ -37,7 +37,7 @@ function random(number = 1) {
     return getRandomArrValue(dinosaurs);
   } else {
     const l = dinosaurs.length;
-    return new Array(number).map(() => getRandomArrValue(dinosaurs, 1, l));
+    return new Array(number).fill().map(() => getRandomArrValue(dinosaurs, 1, l));
   }
 }
 

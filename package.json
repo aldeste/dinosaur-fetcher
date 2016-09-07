@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/index.test.js",
-    "test:watch": "./node_modules/.bin/mocha tests/index.test.js -w",
+    "test-now": "./node_modules/.bin/mocha tests/index.test.js -w",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "config": {
