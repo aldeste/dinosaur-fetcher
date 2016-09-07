@@ -1,4 +1,4 @@
-const dinosaurs = require('./dinosaurs.json');
+const all = require('./dinosaurs.json');
 
 /**
  * Generates a random number
@@ -28,16 +28,16 @@ function getRandomArrValue(arr, min = 1, max = arr.length) {
  * @param  {Number}       number If set, returns an array of dinosaurs
  * @return {String|Array}        Single dinosaur or array of dinosaurs
  */
-// function random(number = 1) {
-//   if (number === 1) {
-//     return getRandomArrValue(dinosaurs);
-//   } else {
-//     const l = dinosaurs.length;
-//     return new Array(number).map(() => getRandomArrValue(dinosaurs, 1, l));
-//   }
-// }
+function random(number = 1) {
+  if (number === 1) {
+    return getRandomArrValue(all);
+  } else {
+    const l = all.length;
+    return new Array(number).map(() => getRandomArrValue(all, 1, l));
+  }
+}
 
 module.exports = {
-    all: dinosaurs
-    // random
+    all,
+    random
 };
