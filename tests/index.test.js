@@ -11,17 +11,17 @@ describe('all', () => {
   });
 });
 
-describe('random', () => {
-  it('Should return a random dinosaur', () => {
-    const dino = dinosaurs.random();
-    expect(dinosaurs.all).to.include(dino);
-  })
-
-  it('Should return a an array of random items, if passed a number', () => {
-    const dinos = dinosaurs.random(3);
-    expect(dinos).to.have.length(3);
-    dinos.map(dino => {
-        expect(dinosaurs.all).to.include(dino);
-    });
-  });
-})
+// describe('random', () => {
+//   it('Should return a random dinosaur', () => {
+//     const dino = dinosaurs.random();
+//     expect(dinosaurs.all).to.include(dino);
+//   })
+//
+//   it('Should return a an array of random items, if passed a number', () => {
+//     const dinos = dinosaurs.random(3);
+//     expect(dinos).to.have.length(3);
+//     dinos.map(dino => {
+//         expect(dinosaurs.all).to.include(dino);
+//     });
+//   });
+// })
