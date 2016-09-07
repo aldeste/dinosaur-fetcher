@@ -24,4 +24,8 @@ describe('random', () => {
         expect(dinosaurs.all).to.include(dino);
     });
   });
+
+  it('Should throw an error if numbers below 1 are passed as parameter', () => {
+    expect(() => dinosaurs.random(-1)).to.throw(Error);;
+  })
 })
