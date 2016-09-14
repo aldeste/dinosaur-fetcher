@@ -20,7 +20,7 @@ describe('random', () => {
   it('Should return a an array of random dinosaurs if passed a number', () => {
     const dinos = dinosaurs.random(3);
     expect(dinos).to.have.length(3);
-    expect(dinosaurs.all).to.include(dinos[0]).and.to.include(dinos[1]).and.to.include(dinos[2]);
+    expect(dinosaurs.all).to.include.members(dinos);
   });
 
   it('Should throw an error if numbers below 1 are passed as parameter', () => {

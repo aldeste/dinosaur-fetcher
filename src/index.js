@@ -19,7 +19,7 @@ function getRandomInt(min, max) {
  * @param  {Number} max Maximum key value
  * @return              Random value from initial array
  */
-function getRandomArrValue(arr, min = 1, max = arr.length) {
+function getRandomArrValue(arr, min = 0, max = arr.length - 1) {
   return arr[getRandomInt(min, max)];
 }
 
@@ -36,8 +36,8 @@ function random(number = 1) {
   if (number === 1) {
     return getRandomArrValue(dinosaurs);
   } else {
-    const l = dinosaurs.length;
-    return new Array(number).fill().map(() => getRandomArrValue(dinosaurs, 1, l));
+    const l = dinosaurs.length - 1;
+    return new Array(number).fill().map(() => getRandomArrValue(dinosaurs, 0, l));
   }
 }
 
